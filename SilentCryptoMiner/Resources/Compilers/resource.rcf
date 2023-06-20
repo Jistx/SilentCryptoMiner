@@ -1,0 +1,29 @@
+#ifdef DefIcon
+1 ICON "#ICON"
+#endif
+1 24 "program.manifest"
+#ifdef DefAssembly
+1 VERSIONINFO
+FILEVERSION     #VERSION
+PRODUCTVERSION  #VERSION
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName", "#COMPANY"
+			VALUE "FileTitle", "#TITLE"
+            VALUE "FileDescription", "#DESCRIPTION"
+            VALUE "FileVersion", "#VERSION"
+            VALUE "LegalCopyright", "#COPYRIGHT"
+			VALUE "LegalTrademark", "#TRADEMARK"
+            VALUE "ProductName", "#PRODUCT"
+            VALUE "ProductVersion", "#VERSION"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+#endif
